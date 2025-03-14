@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1=2;
+        var num2=1;
+        ope='division';
+        
+        function realizarOperacion(num1,num2,ope) {
+            if (ope==='suma') {
+                let resultado=num1+num2
+                console.log(resultado);
+            } else{
+                if (ope==='resta') {
+                    let resultado=num1-num2
+                    console.log(resultado);
+                } else {
+                    if (ope==='multiplicacion') {
+                        let resultado=num1*num2
+                        console.log(resultado);
+                    } else {
+                        if (ope==='division') {
+                            if (num1===0||num2===0) {
+                                console.log(0);
+                                
+                            } else{
+                               let resultado=num1/num2
+                                console.log(resultado);  
+                            }
+                           
+                        } else {
+                            console.log('Error! la operacion no es valida.');
+                            
+                        }
+                        
+                    }
+                }
+            }
+            
+        }
+        realizarOperacion(num1,num2,ope)
+
+        function area(base,altura){
+            return (base*altura)/2
+        }
+        let b=2//parseFloat(prompt('Ingrese la base del triangulo: '))
+        let a=4//parseFloat(prompt('Ingrese la altura del triangulo: '))
+        let areatri=area(b,a)
+        document.write('El area es:', areatri);
+        //const suma=(a,b)=> a+b  
+        //console.log(suma(a,b));
+
+        //const resta=(a,b)=> a-b  
+        //console.log(resta(a,b));  
+
+
+
+
+
+        //const multiplicacion=(a,b)=> a*b  
+        //console.log(multiplicacion(a,b));
+
+        //const division=(a,b)=> a/b  
+        //console.log(division(a,b));
+
+
+
+    </script>
+</body>
+</html>
